@@ -2,7 +2,7 @@ const dgram = require('dgram');
 const { deserializeCommand, serializeAck } = require('./protocol');
 
 const PORT = 41234;
-const HOST = '127.0.0.1';
+const HOST = '0.0.0.0';
 
 const server = dgram.createSocket('udp4');
 
